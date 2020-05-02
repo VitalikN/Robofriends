@@ -8,6 +8,7 @@
 
 
  import { setSearchField, requestRobots } from '../redux/actions';
+import Header from '../components/Header';
 
 
   const mapStateToProps = state => ({
@@ -43,7 +44,7 @@
           <h1>Loading</h1> :
           ( 
              <div className = " tc" >
-              <h1 className="f1"> Your Robofriends </h1> 
+              <Header />
               <SearchBox searchChange={onSearchChange} />
               <Scroll>
                 <ErrorBoundry>
